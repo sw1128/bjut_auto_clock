@@ -30,8 +30,8 @@
 ### 配置腾讯云函数
 
 1. 注册腾讯云函数（此处不赘述），新用户注册三个月免费？（貌似），如果没有免费额度，可以学生认证完之后花1块钱买一年资源包
-
-2. 打开函数服务，[新建函数](https://console.cloud.tencent.com/scf/list-create?rid=1&ns=default&createType=empty?_blank)，选择”从头开始“，函数名称随意，地域随意，运行环境选择`Python3.6`，函数代码选择”在线编辑“，复制`index.py`的代码，粘贴
+<a href="[链接](https://console.cloud.tencent.com/scf/list-create?rid=1&ns=default&createType=empty)" target="_blank">新建函数</a>
+2. 打开函数服务，[新建函数](https://console.cloud.tencent.com/scf/list-create?rid=1&ns=default&createType=empty)，选择”从头开始“，函数名称随意，地域随意，运行环境选择`Python3.6`，函数代码选择”在线编辑“，复制`index.py`的代码，粘贴
 
 3. 日志可以启用也可以不启用，启用的话便于排查报错，但是会略微扣费，新用户三个月免费？（貌似）。
 
