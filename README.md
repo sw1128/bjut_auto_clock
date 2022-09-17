@@ -3,12 +3,14 @@
 ## 📢 注意
 本项目仅供学习交流使用，请勿进行其他用途，使用本软件所造成的一切后果与本人无关。
 ## 🎄 项目功能
+
 * [x] 自动获取code，生成JWT Token
 * [x] 实现每日指定时间自动打卡
   
 ## 🔔 使用方法
 ### 获取eai-sess
 1.打开浏览器，按F12打开开发者工具
+
 2.输入网址👇，回车
 `https://yqfk.bjut.edu.cn/api/login?url_back=pages/index/index`
 
@@ -23,6 +25,7 @@
 ![](https://zwhy-1310134253.cos.ap-beijing.myqcloud.com/clock3.jpg)
 
 ### 配置腾讯云函数
+
 1. 注册腾讯云函数（此处不赘述），新用户注册三个月免费？（貌似），如果没有免费额度，可以学生认证完之后花1块钱买一年资源包
 
 2. 打开函数服务，[新建函数](https://console.cloud.tencent.com/scf/list-create?rid=1&ns=default&createType=empty)，选择”从头开始“，函数名称随意，地域随意，运行环境选择`Python3.6`，函数代码选择”在线编辑“，复制`index.py`的代码，粘贴
@@ -36,7 +39,9 @@
 6. 点击完成创建函数
 
 ### 配置代码
+
 1. 点开刚刚创建的函数，打开index.py，在`eai-sess = ”“`此处填入刚刚获取的eai-sess
+
 👇 特别注意 👇
 
 2. 打卡项在`clock`函数中配置，需要修改，则可以对照`items.json`中的打卡项id进行修改，例如今日所在位置想改成京内校外，则将question_id=50那行的`answer_id`改为`115`，其他不用管
