@@ -1,15 +1,11 @@
 import time
+import datetime
 from email.mime.text import MIMEText
 import smtplib
 import requests
+import json
 
-# 配置区
-eai_sess = ""
-email_1 = ""  # 发送方邮箱
-email_auth = ""  # 发送方邮箱的授权码
-email_2 = ""  # 收件人邮箱
-
-def get_code():
+def get_code(eai_sess):
     url = "https://itsapp.bjut.edu.cn/uc/api/oauth/index?redirect=http://yqfk.bjut.edu.cn/api/login/pages-index-index?login=1&appid=200220501233430304&state=STATE HTTP/1.1"
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
@@ -22,13 +18,15 @@ def get_code():
 
 def get_token(code):
     code_url = "https://yqfk.bjut.edu.cn/api/code"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"
+    }
     code_params = {
         "code": code
     }
-    response_1 = requests.get(code_url, params=code_params, verify=False)
+    response_1 = requests.get(code_url, headers=headers,params=code_params, verify=False)
     token = response_1.json()['token']
     print("token：" + token)
-    print(response_1.status_code)
     return token
 
 def get_info(token):
@@ -55,12 +53,13 @@ def clock(token):
         {"question_id": 64, "answer": {"id": 145, "text": None}},   # 低风险地区
         {"question_id": 65, "answer": {"id": 149, "text": None}},   # 体温自测：正常
         {"question_id": 67, "answer": {"id": 152, "text": None}},   # 身体状况：正常
-        {"question_id": 75, "answer": {"id": 183, "text": None}},   # 健康宝状态：无异常
-        {"question_id": 93, "answer": {"id": 240, "text": None}},   # 异常情况：无
-        {"question_id": 94, "answer": {"id": 244, "text": None}},   # 核酸检测：学校全员
+        {"question_id": 75, "answer": {"id": 183, "text": None}},   # 核酸检测：学校全员
+        {"question_id": 93, "answer": {"id": 240, "text": None}},   # 健康宝状态：无异常
+        {"question_id": 94, "answer": {"id": 244, "text": None}},   # 异常状况：否
         {"question_id": 95, "answer": {"id": 252, "text": None}}    # 核酸结果：阴性
     ]
     clock_headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36",
         "Authorization": "Bearer " + token,
     }
     r = requests.post(url="https://yqfk.bjut.edu.cn/api/home/daily_form", json=clock_data, headers=clock_headers, verify=False)
@@ -68,10 +67,10 @@ def clock(token):
     print(r.json())
     return r.json()
 
-def send_email(news):
+def send_email(news,email_1,email_2,email_auth):
     print("正在推送到邮箱...")
     msg_from = email_1  # 发送方邮箱
-    passwd = email_auth  # 填入发送方邮箱的授权码
+    passwd = email_auth  # 填入发送方邮箱的授权码授权码！！！
     msg_to = email_2  # 收件人邮箱
     subject = "打卡通知"  # 主题
     content = news  # 内容
@@ -93,18 +92,35 @@ def send_email(news):
         print("邮件推送成功！")
         s.quit()
 
-if __name__ == '__main__':
-    code = get_code()
+def multi_clock(eai_sess,email_1,email_2,email_auth):
+    code = get_code(eai_sess)
     token = get_token(code)
     info = get_info(token)
     result = clock(token)
+    utc8_time = datetime.datetime.utcnow() + datetime.timedelta(hours=8)
     news = f"""
     个人信息：{info["data"]['username']} {info["data"]['depart_name']} {info["data"]['identity']}
-    打卡时间：{time.strftime("%Y-%m-%d "+str(time.localtime().tm_hour+8)+":%M:%S", time.localtime())}
+    打卡时间：{utc8_time.strftime("%Y-%m-%d %H:%M:%S %p")}
     code：{result['code']}
     打卡结果：{result['message']}
     success：{result['success']}
     error：{result['error']}
     """
-    send_email(news)
+    send_email(news,email_1,email_2,email_auth)
     print("打卡完成！")
+
+def main_handler(event, context):
+    with open("user.json", "r", encoding="utf-8") as f:
+        user = json.load(f)
+    for i in user:
+        print("#####用户" + i["name"] + "正在打卡...#####")
+        eai_sess = i["eai-sess"]
+        email_1 = i["email_1"]
+        email_2 = i["email_2"]
+        email_auth = i["email_auth"]
+        if eai_sess:
+            multi_clock(eai_sess,email_1,email_2,email_auth)
+            print("等待3秒...")
+            time.sleep(3)
+        else:
+            print("信息不完整，请检查user.json")
