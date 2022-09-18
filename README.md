@@ -50,15 +50,15 @@
 
 2. 打卡项在`clock`函数中配置，需要修改，则可以对照`items.json`中的打卡项id进行修改，例如今日所在位置想改成京内校外，则将question_id=50那行的`answer_id`改为`115`，其他不用管
 
+#### 配置单人/多人打卡
+ 
+　在user.json中填入eai-sess等信息，其中eai-sess为必填项，多人打卡则按照第一条的模板重复添加即可
+
 #### 配置邮箱推送（以QQ邮箱为例）
 
 　1. 打开QQ邮箱，点击设置-账户-POP3/IMAP/SMTP/Exchange/CardDAV/CalDAV服务，开启服务：`POP3/SMTP服务`和`IMAP/SMTP服务`，开启成功后点击”生成授权码“，复制授权码填入user.json文件的`email_auth = ""`中
 
 　2. `email_1 = ""`填发送邮件人的邮箱，`email_2 = ""`填自己的邮箱，可以都填自己的
- 
-#### 配置单人/多人打卡
- 
-　在user.json中填入eai-sess等信息，多人打卡则按照第一条的模板重复添加即可
 
 ### 运行
 
