@@ -1,10 +1,10 @@
 [
   {
-    "name": "",   # 填写姓名（也可以是其他的），作为标识
-    "eai-sess": "bccjhd6p906eua4r32tq82usm1",   #eai—sess
-    "email_1": "876138803@qq.com",  #发送邮箱
-    "email_2": "876138803@qq.com",  #接收邮箱
-    "email_auth": "dyjakgagqtaibfdc"  #邮箱授权码
+    "name": "#填写姓名（也可以是其他的），作为标识",
+    "eai-sess": "#eai—sess",   
+    "email_1": "#发送邮箱",  
+    "email_2": "#接收邮箱",  
+    "email_auth": "#邮箱授权码"  
   },
   {
     "name": "",
