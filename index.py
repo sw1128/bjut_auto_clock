@@ -69,11 +69,11 @@ def clock(token):
 
 def send_email(news,email_1,email_2,email_auth):
     print("正在推送到邮箱...")
-    msg_from = email_1  # 发送方邮箱
-    passwd = email_auth  # 填入发送方邮箱的授权码授权码！！！
-    msg_to = email_2  # 收件人邮箱
-    subject = "打卡通知"  # 主题
-    content = news  # 内容
+    msg_from = email_1  
+    passwd = email_auth  
+    msg_to = email_2 
+    subject = "打卡通知"  # 邮件主题
+    content = news  # 邮件内容
     msg = MIMEText(content)
     # 放入邮件主题
     msg['Subject'] = subject
