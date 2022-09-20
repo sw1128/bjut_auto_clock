@@ -62,7 +62,7 @@
 
 2. 打卡项在`clock`函数中配置，需要修改，则可以对照`items.json`中的打卡项id进行修改，通州校区的同学务必修改打卡项第二行的位置和经纬度信息，若今日所在位置想改成京内校外，则将question_id=50那行的`answer_id`改为`115`，添加打卡项和删除打卡项应该不用多讲了吧，对照着上面写就行
 
-![](https://zwhy-1310134253.cos.ap-beijing.myqcloud.com/clock10_1.png)
+![](https://zwhy-1310134253.cos.ap-beijing.myqcloud.com/clock10.jpg)
 
 ![](https://zwhy-1310134253.cos.ap-beijing.myqcloud.com/clock11.jpg)
 
@@ -74,7 +74,7 @@
 
 　1. 打开QQ邮箱，点击设置-账户-POP3/IMAP/SMTP/Exchange/CardDAV/CalDAV服务，开启服务：`POP3/SMTP服务`和`IMAP/SMTP服务`，开启成功后点击”生成授权码“，复制授权码填入user.json文件的`email_auth = ""`中
  
- ![](https://zwhy-1310134253.cos.ap-beijing.myqcloud.com/clock12.jpg)
+![](https://zwhy-1310134253.cos.ap-beijing.myqcloud.com/clock12.jpg)
 
 　2. `email_1 = ""`填发送邮件人的邮箱，`email_2 = ""`填自己的邮箱，可以都填自己的
 
