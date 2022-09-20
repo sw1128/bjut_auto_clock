@@ -38,7 +38,7 @@
 
 ![](https://zwhy-1310134253.cos.ap-beijing.myqcloud.com/clock5.jpg)
 
-![](https://zwhy-1310134253.cos.ap-beijing.myqcloud.com/clock6.jpg)
+![](https://zwhy-1310134253.cos.ap-beijing.myqcloud.com/clock5.jpg)
 
 3. 日志可以启用也可以不启用，启用的话便于排查报错，但是会略微扣费，新用户三个月免费？（貌似）。
 
