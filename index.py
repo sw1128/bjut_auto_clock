@@ -106,7 +106,10 @@ def multi_clock(eai_sess,email_1,email_2,email_auth):
     success：{result['success']}
     error：{result['error']}
     """
-    send_email(news,email_1,email_2,email_auth)
+    if email_1 and email_2 and email_auth:
+        send_email(news,email_1,email_2,email_auth)
+    else:
+        print("用户未正确配置邮箱推送")
     print("打卡完成！")
 
 def main_handler(event, context):
