@@ -9,7 +9,8 @@ def get_code(eai_sess):
     url = "https://itsapp.bjut.edu.cn/uc/api/oauth/index?redirect=http://yqfk.bjut.edu.cn/api/login/pages-index-index?login=1&appid=200220501233430304&state=STATE HTTP/1.1"
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
-        "Cookie": "eai-sess=" + eai_sess
+        "Cookie": "eai-sess=" + eai_sess,
+        "Connection": "close"
     }
     response = requests.get(url, headers=headers, verify=False, allow_redirects=False)
     code = response.headers['Location'].split("code=")[1].split("&")[0]
@@ -19,7 +20,8 @@ def get_code(eai_sess):
 def get_token(code):
     code_url = "https://yqfk.bjut.edu.cn/api/code"
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36",
+        "Connection": "close"
     }
     code_params = {
         "code": code
@@ -34,7 +36,8 @@ def get_info(token):
     info_url = "https://yqfk.bjut.edu.cn/api/home/user_info"
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36",
-        "Authorization": "Bearer " + token
+        "Authorization": "Bearer " + token,
+        "Connection": "close"
     }
     info = requests.get(info_url, headers=headers, verify=False).json()
     print(info)
@@ -61,6 +64,7 @@ def clock(token):
     clock_headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36",
         "Authorization": "Bearer " + token,
+        "Connection": "close"
     }
     r = requests.post(url="https://yqfk.bjut.edu.cn/api/home/daily_form", json=clock_data, headers=clock_headers, verify=False)
     print(r.status_code)
