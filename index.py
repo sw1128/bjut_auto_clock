@@ -52,11 +52,16 @@ def clock(token):
         {"question_id": 58, "answer": {"id": 134, "text": None}},   # 是否离境：否
         {"question_id": 64, "answer": {"id": 145, "text": None}},   # 低风险地区
         {"question_id": 65, "answer": {"id": 149, "text": None}},   # 体温自测：正常
-        {"question_id": 67, "answer": {"id": 152, "text": None}},   # 身体状况：正常
-        {"question_id": 75, "answer": {"id": 183, "text": None}},   # 核酸检测：学校全员
-        {"question_id": 93, "answer": {"id": 240, "text": None}},   # 健康宝状态：无异常
-        {"question_id": 94, "answer": {"id": 244, "text": None}},   # 异常状况：否
-        {"question_id": 95, "answer": {"id": 252, "text": None}}    # 核酸结果：阴性
+        {"question_id": 75, "answer": {"id": 183, "text": None}},   # 是否参加核酸检测：学校全员
+        {"question_id": 93, "answer": {"id": 240, "text": None}},   # 今日健康宝状态：无异常
+        {"question_id": 94, "answer": {"id": 244, "text": None}},   # 今日是否有异常状况：无
+        {"question_id": 95, "answer": {"id": 252, "text": None}},   # 最近一次核酸结果：阴性
+        # 2022/10/01 新增项
+        {"question_id": 103, "answer": {"id": 267, "text": None}},  # 7天内是否有本土新冠病毒感染者所在县（市、区、旗）旅居史：否
+        {"question_id": 112, "answer": {"id": 280, "text": None}},  # 本人及共同居住者早午晚健康状况：正常
+        {"question_id": 114, "answer": {"id": 283, "text": None}},  # 北京健康宝状态：正常
+        {"question_id": 115, "answer": {"id": 287, "text": None}},  # 本人及家庭成员、共同居住者是否有以下异常情况：无异常情况
+        {"question_id": 117, "answer": {"id": 300, "text": None}},  # 今日是否核酸检测：校内做核酸检测
     ]
     clock_headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36",
