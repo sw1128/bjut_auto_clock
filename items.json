@@ -23,7 +23,7 @@
                     "translate": "China Mainland",
                     "type": "radio",
                     "question_id": 48,
-                    "value": "36",
+                    "value": "36,119",
                     "show_hidden": 1,
                     "created_at": null,
                     "updated_at": null,
@@ -41,9 +41,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "",
-            "level": 1
+            ]
         },
         {
             "id": 36,
@@ -73,9 +71,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "----",
-            "level": 2
+            ]
         },
         {
             "id": 49,
@@ -105,9 +101,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "----",
-            "level": 2
+            ]
         },
         {
             "id": 50,
@@ -173,9 +167,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "",
-            "level": 1
+            ]
         },
         {
             "id": 104,
@@ -229,9 +221,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "----",
-            "level": 2
+            ]
         },
         {
             "id": 51,
@@ -285,9 +275,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "----",
-            "level": 2
+            ]
         },
         {
             "id": 52,
@@ -329,9 +317,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "----",
-            "level": 2
+            ]
         },
         {
             "id": 53,
@@ -373,9 +359,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "--------",
-            "level": 3
+            ]
         },
         {
             "id": 54,
@@ -417,9 +401,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "----",
-            "level": 2
+            ]
         },
         {
             "id": 55,
@@ -461,9 +443,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "----",
-            "level": 2
+            ]
         },
         {
             "id": 56,
@@ -505,9 +485,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "----",
-            "level": 2
+            ]
         },
         {
             "id": 105,
@@ -537,9 +515,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "--------",
-            "level": 3
+            ]
         },
         {
             "id": 106,
@@ -569,9 +545,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "--------",
-            "level": 3
+            ]
         },
         {
             "id": 57,
@@ -613,9 +587,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "----",
-            "level": 2
+            ]
         },
         {
             "id": 107,
@@ -645,9 +617,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "--------",
-            "level": 3
+            ]
         },
         {
             "id": 108,
@@ -701,9 +671,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "--------",
-            "level": 3
+            ]
         },
         {
             "id": 109,
@@ -733,9 +701,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "--------",
-            "level": 3
+            ]
         },
         {
             "id": 110,
@@ -765,9 +731,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "--------",
-            "level": 3
+            ]
         },
         {
             "id": 58,
@@ -809,9 +773,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "----",
-            "level": 2
+            ]
         },
         {
             "id": 59,
@@ -853,9 +815,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "----",
-            "level": 2
+            ]
         },
         {
             "id": 60,
@@ -921,9 +881,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "----",
-            "level": 2
+            ]
         },
         {
             "id": 111,
@@ -953,9 +911,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "--------",
-            "level": 3
+            ]
         },
         {
             "id": 64,
@@ -987,23 +943,11 @@
                 },
                 {
                     "id": 145,
-                    "title": "低风险地区",
-                    "translate": "low-risk areas",
+                    "title": "低风险地区（高风险地区所在县级行政区域的其他区域）",
+                    "translate": "low-risk areas.(Other areas than the high risk ones in that county\/city\/districts\/banners）",
                     "type": "radio",
                     "question_id": 64,
-                    "value": null,
-                    "show_hidden": 1,
-                    "created_at": null,
-                    "updated_at": null,
-                    "deleted_at": null
-                },
-                {
-                    "id": 147,
-                    "title": "中风险地区",
-                    "translate": "medium-risk areas",
-                    "type": "radio",
-                    "question_id": 64,
-                    "value": null,
+                    "value": "122",
                     "show_hidden": 1,
                     "created_at": null,
                     "updated_at": null,
@@ -1015,27 +959,13 @@
                     "translate": "high-risk areas",
                     "type": "radio",
                     "question_id": 64,
-                    "value": null,
-                    "show_hidden": 1,
-                    "created_at": null,
-                    "updated_at": null,
-                    "deleted_at": null
-                },
-                {
-                    "id": 192,
-                    "title": "境外地区",
-                    "translate": "Outside China",
-                    "type": "radio",
-                    "question_id": 64,
-                    "value": null,
+                    "value": "122",
                     "show_hidden": 1,
                     "created_at": null,
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "",
-            "level": 1
+            ]
         },
         {
             "id": 103,
@@ -1077,9 +1007,37 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "",
-            "level": 1
+            ]
+        },
+        {
+            "id": 122,
+            "question": "高低风险地区名称（可查询“国务院客户端”小程序）",
+            "translate": "Name of high or low risk areas（You can query the \u0022State Council Client\u0022 applet）",
+            "type": 2,
+            "pid": 64,
+            "orderding": 15,
+            "show": 0,
+            "must": 1,
+            "person_type": 1,
+            "error": "请选择必填项",
+            "disabled": 1,
+            "created_at": null,
+            "updated_at": null,
+            "deleted_at": null,
+            "answer": [
+                {
+                    "id": 314,
+                    "title": null,
+                    "translate": null,
+                    "type": "textarea",
+                    "question_id": 122,
+                    "value": null,
+                    "show_hidden": 1,
+                    "created_at": null,
+                    "updated_at": null,
+                    "deleted_at": null
+                }
+            ]
         },
         {
             "id": 65,
@@ -1121,9 +1079,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "",
-            "level": 1
+            ]
         },
         {
             "id": 66,
@@ -1153,9 +1109,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "----",
-            "level": 2
+            ]
         },
         {
             "id": 112,
@@ -1197,9 +1151,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "",
-            "level": 1
+            ]
         },
         {
             "id": 118,
@@ -1241,9 +1193,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "----",
-            "level": 2
+            ]
         },
         {
             "id": 113,
@@ -1273,9 +1223,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "----",
-            "level": 2
+            ]
         },
         {
             "id": 114,
@@ -1341,9 +1289,97 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "",
-            "level": 1
+            ]
+        },
+        {
+            "id": 115,
+            "question": "本人及家庭成员、共同居住者是否有以下异常情况",
+            "translate": "Is there anything abnormal of myself and my co-residents today?",
+            "type": 2,
+            "pid": 0,
+            "orderding": 19,
+            "show": 1,
+            "must": 1,
+            "person_type": 1,
+            "error": "请选择必填项",
+            "disabled": 1,
+            "created_at": null,
+            "updated_at": null,
+            "deleted_at": null,
+            "answer": [
+                {
+                    "id": 287,
+                    "title": "无异常情况",
+                    "translate": "Nothing abnormal",
+                    "type": "radio",
+                    "question_id": 115,
+                    "value": null,
+                    "show_hidden": 1,
+                    "created_at": null,
+                    "updated_at": null,
+                    "deleted_at": null
+                },
+                {
+                    "id": 288,
+                    "title": "确诊",
+                    "translate": "Nucleic acid confirmed diagnosis.",
+                    "type": "radio",
+                    "question_id": 115,
+                    "value": "116,125",
+                    "show_hidden": 1,
+                    "created_at": null,
+                    "updated_at": null,
+                    "deleted_at": null
+                },
+                {
+                    "id": 289,
+                    "title": "密接",
+                    "translate": " Close contact. ",
+                    "type": "radio",
+                    "question_id": 115,
+                    "value": "116,125",
+                    "show_hidden": 1,
+                    "created_at": null,
+                    "updated_at": null,
+                    "deleted_at": null
+                },
+                {
+                    "id": 291,
+                    "title": "同时空密接",
+                    "translate": "Close contact of time and space with confirmed diagnosis. ",
+                    "type": "radio",
+                    "question_id": 115,
+                    "value": "116,125",
+                    "show_hidden": 1,
+                    "created_at": null,
+                    "updated_at": null,
+                    "deleted_at": null
+                },
+                {
+                    "id": 292,
+                    "title": "同时空关联",
+                    "translate": "Close connections in the same time and space",
+                    "type": "radio",
+                    "question_id": 115,
+                    "value": "116,125",
+                    "show_hidden": 1,
+                    "created_at": null,
+                    "updated_at": null,
+                    "deleted_at": null
+                },
+                {
+                    "id": 293,
+                    "title": "其他异常情况",
+                    "translate": "Other abnormal situations. ",
+                    "type": "radio",
+                    "question_id": 115,
+                    "value": "116,125",
+                    "show_hidden": 1,
+                    "created_at": null,
+                    "updated_at": null,
+                    "deleted_at": null
+                }
+            ]
         },
         {
             "id": 116,
@@ -1433,113 +1469,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "----",
-            "level": 2
-        },
-        {
-            "id": 115,
-            "question": "本人及家庭成员、共同居住者是否有以下异常情况",
-            "translate": "Is there anything abnormal of myself and my co-residents today?",
-            "type": 2,
-            "pid": 0,
-            "orderding": 19,
-            "show": 1,
-            "must": 1,
-            "person_type": 1,
-            "error": "请选择必填项",
-            "disabled": 1,
-            "created_at": null,
-            "updated_at": null,
-            "deleted_at": null,
-            "answer": [
-                {
-                    "id": 287,
-                    "title": "无异常情况",
-                    "translate": "Nothing abnormal",
-                    "type": "radio",
-                    "question_id": 115,
-                    "value": null,
-                    "show_hidden": 1,
-                    "created_at": null,
-                    "updated_at": null,
-                    "deleted_at": null
-                },
-                {
-                    "id": 288,
-                    "title": "确诊",
-                    "translate": "Nucleic acid confirmed diagnosis.",
-                    "type": "radio",
-                    "question_id": 115,
-                    "value": "116",
-                    "show_hidden": 1,
-                    "created_at": null,
-                    "updated_at": null,
-                    "deleted_at": null
-                },
-                {
-                    "id": 289,
-                    "title": "密接",
-                    "translate": " Close contact. ",
-                    "type": "radio",
-                    "question_id": 115,
-                    "value": "116",
-                    "show_hidden": 1,
-                    "created_at": null,
-                    "updated_at": null,
-                    "deleted_at": null
-                },
-                {
-                    "id": 290,
-                    "title": "次密接",
-                    "translate": "Second contact.",
-                    "type": "radio",
-                    "question_id": 115,
-                    "value": "116",
-                    "show_hidden": 1,
-                    "created_at": null,
-                    "updated_at": null,
-                    "deleted_at": null
-                },
-                {
-                    "id": 291,
-                    "title": "同时空密接",
-                    "translate": "Close contact of time and space with confirmed diagnosis. ",
-                    "type": "radio",
-                    "question_id": 115,
-                    "value": "116",
-                    "show_hidden": 1,
-                    "created_at": null,
-                    "updated_at": null,
-                    "deleted_at": null
-                },
-                {
-                    "id": 292,
-                    "title": "同时空关联",
-                    "translate": "Close connections in the same time and space",
-                    "type": "radio",
-                    "question_id": 115,
-                    "value": "116",
-                    "show_hidden": 1,
-                    "created_at": null,
-                    "updated_at": null,
-                    "deleted_at": null
-                },
-                {
-                    "id": 293,
-                    "title": "其他异常情况",
-                    "translate": "Other abnormal situations. ",
-                    "type": "radio",
-                    "question_id": 115,
-                    "value": "116",
-                    "show_hidden": 1,
-                    "created_at": null,
-                    "updated_at": null,
-                    "deleted_at": null
-                }
-            ],
-            "html": "",
-            "level": 1
+            ]
         },
         {
             "id": 117,
@@ -1595,7 +1525,7 @@
                 },
                 {
                     "id": 303,
-                    "title": "今日在校内核酸抗原自测",
+                    "title": "今日在校外核酸抗原自测",
                     "translate": "I have done the nucleic acid antigen self-test out of school today",
                     "type": "radio",
                     "question_id": 117,
@@ -1617,17 +1547,15 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "",
-            "level": 1
+            ]
         },
         {
-            "id": 93,
-            "question": "今日健康宝状态",
-            "translate": "How is Health Kit today？",
+            "id": 123,
+            "question": "当日健康宝查询核酸几天",
+            "translate": "Nucleic acid days from Health Kit today",
             "type": 2,
             "pid": 0,
-            "orderding": 20,
+            "orderding": 19,
             "show": 1,
             "must": 1,
             "person_type": 1,
@@ -1638,11 +1566,11 @@
             "deleted_at": null,
             "answer": [
                 {
-                    "id": 240,
-                    "title": "无异常情况",
-                    "translate": "Nothing abnormal",
+                    "id": 315,
+                    "title": "0天",
+                    "translate": "day 0",
                     "type": "radio",
-                    "question_id": 93,
+                    "question_id": 123,
                     "value": null,
                     "show_hidden": 1,
                     "created_at": null,
@@ -1650,53 +1578,63 @@
                     "deleted_at": null
                 },
                 {
-                    "id": 241,
-                    "title": "健康宝弹窗",
-                    "translate": "Received popped-up notification on Health Kit",
+                    "id": 316,
+                    "title": "1天",
+                    "translate": "day 1",
                     "type": "radio",
-                    "question_id": 93,
-                    "value": "70,71,72,73,74,75",
+                    "question_id": 123,
+                    "value": null,
                     "show_hidden": 1,
                     "created_at": null,
                     "updated_at": null,
                     "deleted_at": null
                 },
                 {
-                    "id": 242,
-                    "title": "健康宝黄码",
-                    "translate": "Health Kit yellow code",
+                    "id": 317,
+                    "title": "2天",
+                    "translate": "day 2",
                     "type": "radio",
-                    "question_id": 93,
-                    "value": "70,71,72,73,74,75",
+                    "question_id": 123,
+                    "value": null,
                     "show_hidden": 1,
                     "created_at": null,
                     "updated_at": null,
                     "deleted_at": null
                 },
                 {
-                    "id": 243,
-                    "title": "健康宝红码",
-                    "translate": "Health Kit red code",
+                    "id": 318,
+                    "title": "3天",
+                    "translate": "day 3",
                     "type": "radio",
-                    "question_id": 93,
-                    "value": "70,71,72,73,74,75",
+                    "question_id": 123,
+                    "value": null,
+                    "show_hidden": 1,
+                    "created_at": null,
+                    "updated_at": null,
+                    "deleted_at": null
+                },
+                {
+                    "id": 319,
+                    "title": "4天及以上",
+                    "translate": "4 days and above",
+                    "type": "radio",
+                    "question_id": 123,
+                    "value": null,
                     "show_hidden": 1,
                     "created_at": null,
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "",
-            "level": 1
+            ]
         },
         {
-            "id": 94,
-            "question": "今日是否有异常情况",
-            "translate": "Is there anything abnormal today?",
+            "id": 125,
+            "question": "今日同住人员是否外地返京（同住人员外地返京，7天内暂不入校）",
+            "translate": "the Cohabitants back to Beijing today？（If the Cohabitants back to Beijing today，you will not be admitted to school for 7 days）",
             "type": 2,
-            "pid": 0,
-            "orderding": 20,
-            "show": 1,
+            "pid": 115,
+            "orderding": 19,
+            "show": 0,
             "must": 1,
             "person_type": 1,
             "error": "请选择必填项",
@@ -1706,11 +1644,11 @@
             "deleted_at": null,
             "answer": [
                 {
-                    "id": 244,
-                    "title": "无异常情况",
-                    "translate": "Nothing abnormal",
+                    "id": 320,
+                    "title": "是",
+                    "translate": "Yes",
                     "type": "radio",
-                    "question_id": 94,
+                    "question_id": 125,
                     "value": null,
                     "show_hidden": 1,
                     "created_at": null,
@@ -1718,92 +1656,18 @@
                     "deleted_at": null
                 },
                 {
-                    "id": 245,
-                    "title": "本人为确诊",
-                    "translate": " I nucleic acid confirmed diagnosis.",
+                    "id": 321,
+                    "title": "否",
+                    "translate": "No",
                     "type": "radio",
-                    "question_id": 94,
-                    "value": "70,71,72,73,74,75",
-                    "show_hidden": 1,
-                    "created_at": null,
-                    "updated_at": null,
-                    "deleted_at": null
-                },
-                {
-                    "id": 246,
-                    "title": "本人为密接",
-                    "translate": "I’m a close contact. ",
-                    "type": "radio",
-                    "question_id": 94,
-                    "value": "70,71,72,73,74,75",
-                    "show_hidden": 1,
-                    "created_at": null,
-                    "updated_at": null,
-                    "deleted_at": null
-                },
-                {
-                    "id": 247,
-                    "title": "本人为次密接",
-                    "translate": "I’m a second contact. ",
-                    "type": "radio",
-                    "question_id": 94,
-                    "value": "70,71,72,73,74,75",
-                    "show_hidden": 1,
-                    "created_at": null,
-                    "updated_at": null,
-                    "deleted_at": null
-                },
-                {
-                    "id": 248,
-                    "title": "本人为同时空密接",
-                    "translate": "I’m a close contact of time and space with confirmed diagnosis.",
-                    "type": "radio",
-                    "question_id": 94,
-                    "value": "70,71,72,73,74,75",
-                    "show_hidden": 1,
-                    "created_at": null,
-                    "updated_at": null,
-                    "deleted_at": null
-                },
-                {
-                    "id": 249,
-                    "title": "本人与病例轨迹重合或风险暴露",
-                    "translate": "I coincide with the confirmed patient trajectory or risk exposure. ",
-                    "type": "radio",
-                    "question_id": 94,
-                    "value": "70,71,72,73,74,75",
-                    "show_hidden": 1,
-                    "created_at": null,
-                    "updated_at": null,
-                    "deleted_at": null
-                },
-                {
-                    "id": 250,
-                    "title": "本人旅居或经停中高风险地区",
-                    "translate": "I live in or stop in medium-high-risk areas. ",
-                    "type": "radio",
-                    "question_id": 94,
-                    "value": "70,71,72,73,74,75",
-                    "show_hidden": 1,
-                    "created_at": null,
-                    "updated_at": null,
-                    "deleted_at": null
-                },
-                {
-                    "id": 251,
-                    "title": "其他异常情况",
-                    "translate": "Other abnormal situations.",
-                    "type": "radio",
-                    "question_id": 94,
-                    "value": "70,71,72,73,74,75",
+                    "question_id": 125,
+                    "value": null,
                     "show_hidden": 1,
                     "created_at": null,
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "",
-            "level": 1
+            ]
         },
         {
             "id": 70,
@@ -1845,9 +1709,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "----",
-            "level": 2
+            ]
         },
         {
             "id": 71,
@@ -1889,9 +1751,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "----",
-            "level": 2
+            ]
         },
         {
             "id": 72,
@@ -1945,9 +1805,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "----",
-            "level": 2
+            ]
         },
         {
             "id": 73,
@@ -1989,9 +1847,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "----",
-            "level": 2
+            ]
         },
         {
             "id": 74,
@@ -2093,77 +1949,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "----",
-            "level": 2
-        },
-        {
-            "id": 75,
-            "question": "今日是否核酸检测",
-            "translate": "Have you done a nucleic acid test today?",
-            "type": 2,
-            "pid": 0,
-            "orderding": 26,
-            "show": 1,
-            "must": 1,
-            "person_type": 1,
-            "error": "请选择今日是否核酸检测",
-            "disabled": 1,
-            "created_at": null,
-            "updated_at": null,
-            "deleted_at": null,
-            "answer": [
-                {
-                    "id": 183,
-                    "title": "今日参加学校全员核酸检测",
-                    "translate": "I have done the test in school today",
-                    "type": "radio",
-                    "question_id": 75,
-                    "value": null,
-                    "show_hidden": 1,
-                    "created_at": null,
-                    "updated_at": null,
-                    "deleted_at": null
-                },
-                {
-                    "id": 184,
-                    "title": "今日在校外做核酸检测",
-                    "translate": "I have done the test out of school today",
-                    "type": "radio",
-                    "question_id": 75,
-                    "value": null,
-                    "show_hidden": 1,
-                    "created_at": null,
-                    "updated_at": null,
-                    "deleted_at": null
-                },
-                {
-                    "id": 185,
-                    "title": "今日核酸抗原自测",
-                    "translate": "I have done the nucleic acid antigen self-test today",
-                    "type": "radio",
-                    "question_id": 75,
-                    "value": "89",
-                    "show_hidden": 1,
-                    "created_at": null,
-                    "updated_at": null,
-                    "deleted_at": null
-                },
-                {
-                    "id": 186,
-                    "title": "今日无需做核酸检测",
-                    "translate": "No need to do the test today",
-                    "type": "radio",
-                    "question_id": 75,
-                    "value": null,
-                    "show_hidden": 1,
-                    "created_at": null,
-                    "updated_at": null,
-                    "deleted_at": null
-                }
-            ],
-            "html": "",
-            "level": 1
+            ]
         },
         {
             "id": 89,
@@ -2217,9 +2003,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "----",
-            "level": 2
+            ]
         },
         {
             "id": 95,
@@ -2261,9 +2045,7 @@
                     "updated_at": null,
                     "deleted_at": null
                 }
-            ],
-            "html": "",
-            "level": 1
+            ]
         }
     ],
     "message": "success",
