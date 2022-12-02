@@ -69,6 +69,8 @@
 
 2. 打卡项在`clock`函数中配置，需要修改，则可以对照`items.json`中的打卡项id进行修改，通州校区的同学务必修改打卡项第二行的位置和经纬度信息，若今日所在位置想改成京内校外，则将question_id=50那行的`answer_id`改为`115`，添加打卡项和删除打卡项应该不用多讲了吧，对照着上面写就行
 
+　　`获取经纬度`：按F12打开开发者工具，点击网络/Network选项卡，在打卡界面点击获取位置的框，就可以看到一条getCityByLocation?location=XXX的请求，点击负载便可以知道经纬度信息。
+
 ![](https://zwhy-1310134253.cos.ap-beijing.myqcloud.com/clock10.jpg)
 
 ![](https://zwhy-1310134253.cos.ap-beijing.myqcloud.com/clock11.jpg)
